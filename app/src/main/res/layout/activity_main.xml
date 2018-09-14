@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_curp"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Curp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/codigo"
+        android:layout_width="128dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/curp"
+        android:text="Código de verificación"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/AP"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="106dp"
+        android:text="Apellido paterno"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/AM"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="163dp"
+        android:text="Apellido materno"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="224dp"
+        android:text="Nombre(s)"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/Sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="216dp"
+        android:text="Sexo"
+        android:textSize="20dp" />
+
+    <RadioButton
+        android:id="@+id/RB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Nombre"
+        android:layout_marginStart="113dp"
+        android:text="Hombre" />
+
+    <RadioButton
+        android:id="@+id/RB2"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Nombre"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/title_curp"
+        android:text="Mujer" />
+
+    <TextView
+        android:id="@+id/Edad"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="166dp"
+        android:text="Edad"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/EF"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="117dp"
+        android:text="Entidad federativa"
+        android:textSize="20dp" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/EF"
+        android:layout_marginLeft="172dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Abrir actividad 2" />
+
+
+</RelativeLayout>
+
+
+
+
