@@ -25,6 +25,7 @@ public class CurpActivity extends AppCompatActivity {
     private RadioButton mMujer;
     private Button mGenerar;
     private TextView txt_generado;
+    private TextView txt_nombre;
 
 
     @Override
@@ -80,12 +81,19 @@ public class CurpActivity extends AppCompatActivity {
                 String NOMBRE = nombre.substring(0,1);
 
 
-                txt_generado.setText(APELLIDO_PA + APELLIDO_MA + NOMBRE + ANO + MES + DIA + SEXO + ESTADOS);
+                        txt_generado.setText(APELLIDO_PA + APELLIDO_MA + NOMBRE + ANO + MES + DIA + SEXO + ESTADOS);
 
+                String mGenerado = txt_generado.getText().toString();
+
+                        Intent miIntent = new Intent(CurpActivity.this,activity2.class);
+                        miIntent.putExtra("Ccurp",mGenerado);
+                startActivity(miIntent);
 
 
             }   
         });
 
     }
+
+
 }
